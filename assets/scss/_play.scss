@@ -1,28 +1,52 @@
-.app-video-wrapp {
-    background-image: url('../img/vedio_bg.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 54px;
-    text-align: center;
-    padding: 195px 0;
-    .play-btn {
-      width: 152px;
-      height: 112px;
-      display: inline-block;
-      background: $themeRed;
-      border-radius: 50%;
-      font-size: 28px;
-      text-align: center;
-      line-height: 105px;
-      background: #FFFFFF;
-      opacity: 0.95;
-      box-shadow: 0px 1px 37px 6px rgba(0, 0, 0, 0.22);
-      border-radius: 33px;
-      i {
-        font-size: 55px;
-        color: $themeRed;
-        line-height: 110px;
-      }
+
+
+.app-video-area {
+	&::after {
+        content: "aorasoft";
+        position: absolute;
+        top: -244px;
+        font-weight: 700;
+        font-size: 380px;
+        line-height: 435px;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgba(0,0,0,.2);
+        opacity: .1;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        margin: auto 0;
+	}
+	position: relative;
+
+    .app-video-wrapp {
+        background-image: url('../img/introBanner.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 54px;
+        text-align: center;
+        padding: 240px 0;
+        margin-left: auto;
+        margin-right: auto;
+        .play-btn {
+            width: 152px;
+            height: 112px;
+            display: inline-block;
+            background: $themeRed;
+            border-radius: 50%;
+            font-size: 55px;
+            text-align: center;
+            line-height: 110px;
+            background: #FFFFFF;
+            opacity: 0.95;
+            box-shadow: 0px 1px 37px 6px rgba(0, 0, 0, 0.22);
+            border-radius: 33px;
+            color: $themeRed;
+            i {
+                font-size: 55px;
+                line-height: 110px;
+            }
+        }
     }
-  }
+}
