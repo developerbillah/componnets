@@ -1,0 +1,49 @@
+
+// Double TAB
+$color_1: #4277FF;
+$color_2: #fff;
+
+.doubleTabS {
+    .tab_navWrapper{
+        background: #2C3341;
+		box-shadow: 10px 23px 50px rgb(0 0 0 / 8%);
+		border-radius: 37px;
+		padding: 40px;
+        position: relative;
+        &:before {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: blue;
+            content: "";
+            border-radius: 37px;
+            left: -6px;
+            top: 0px;
+            z-index: -1;
+        }
+        h2{
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 37px;
+            text-align: center;
+            color: #4277FF;
+            margin-bottom: 34px;
+        }
+    }
+	#vertical-innerTabNav {
+		.nav-link {
+			background: rgba(66, 119, 255, 0.1);
+			border-radius: 10px;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 23px;
+			color: $color_1;
+			padding: 25px;
+			margin-bottom: 22px;
+		}
+		.active {
+			background: #4277FF;
+			color: $color_2;
+		}
+	}
+}
